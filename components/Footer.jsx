@@ -9,7 +9,7 @@ export default function Footer() {
     return (
 
 
-        <footer className="bg-[#f7f6f6] mt-10 p-3">
+        <footer className="bg-[#e3e3e3] mt-10 p-3">
                
                <div className="pt-5 text-center text-2xl">Copyright {currentYear} @ Speedometer</div>
 
@@ -19,8 +19,8 @@ export default function Footer() {
                     <li> <Link href="/">Home</Link></li>
                     <li> <Link href="/about">About</Link></li>
                     <li> <Link href="/contact">Contact</Link></li>
-                    <li> <Link href="/about">About</Link></li>
-                    <li> <Link href="/contact">Contact</Link></li>
+                    <li> <Link href="/privacy-policy">Privacy Policy</Link></li>
+                    <li> <Link href="/disclaimer">Disclaimer</Link></li>
                 </ul>
             </div>
 

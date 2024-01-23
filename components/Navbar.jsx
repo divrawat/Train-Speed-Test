@@ -1,12 +1,17 @@
 import Link from "next/link";
-import Toggle from "./Toggle";
 
 export default function Navbar() {
 
+    function toggle() {
+        let x = document.getElementById("menu")
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        }
+        else { x.style.display = "block" }
+    }
 
 
     return (
-
 
         <nav className="md:pb-3 pt-3 border-b border-[#bebdbd]">
 
@@ -16,7 +21,7 @@ export default function Navbar() {
                         <img src="/00.png" alt="Logo" className="h-[50px] w-[55px] mr-3 ml-3" />
                         <span className="text-black text-lg font-bold tracking-wider text-[21px] md:text-[24px]">SpeedoMeter</span>
                     </div>
-                    <Toggle />
+                    <span onClick={toggle} className="md:hidden text-[22px] font-extrabold mr-4">☰</span>
                 </div>
 
                 <div className="md:pb-0 pr-3 md:mt-0 mt-4 md:bg-transparent bg-[#f7f6f6] ">
