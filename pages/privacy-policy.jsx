@@ -15,7 +15,7 @@ const PrivacyPolicy = () => {
                 <p className="mt-2 mb-[20px]"> When you visit our website, we may collect certain information from and about you, which includes:</p>
 
                 <p className="mt-2 mb-[20px]">Personal Information: We do not directly gather personal information such as your name, address, phone number, or email address through our website.</p>
-                <p className="mt-2 mb-[40px]">Non-Personal Information: For analytical purposes aimed at enhancing our website's functionality and user experience, we may collect non-personal information about your visit. This may include your IP address, browser type, device information, operating system, referring/exit pages, and clickstream data.</p>
+                <p className="mt-2 mb-[40px]">Non-Personal Information: For analytical purposes aimed at enhancing our website&apos;s functionality and user experience, we may collect non-personal information about your visit. This may include your IP address, browser type, device information, operating system, referring/exit pages, and clickstream data.</p>
 
 
                 <h2 className="text-3xl font-bold mb-6">Cookies and Tracking Technologies</h2>
