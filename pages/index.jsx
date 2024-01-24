@@ -104,7 +104,7 @@ export default function Home() {
             <p className="mb-[35px]">The average speed of train in India is just 55 km/s .</p>
 
             <h3 className="text-2xl font-bold mb-2">How do this train speed tool work ?</h3>
-            <p className="mb-[35px]">This train speed tool access your location from the browser using the Geolocation API and updates when position changes. It watches the user's position and updates the provided callback whenever the position changes and hence the speed is predicted.</p>
+            <p className="mb-[35px]">This train speed tool access your location from the browser using the Geolocation API and updates when position changes. It watches the user&apos;s position and updates the provided callback whenever the position changes and hence the speed is predicted.</p>
 
 
 
