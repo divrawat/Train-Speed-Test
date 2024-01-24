@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { IoMdSpeedometer } from "react-icons/io";
 
 export default function Navbar() {
 
@@ -19,7 +20,8 @@ export default function Navbar() {
             <div className="container mx-auto md:flex items-center justify-center md:justify-between max-w-[1200px]">
                 <div className="flex items-center md:space-x-4 justify-between">
                     <div className="flex items-center">
-                        <img src="/00.png" alt="Logo" className="h-[50px] w-[55px] mr-3 ml-3" />
+                        {/* <img src="/00.png" alt="Logo" className="h-[50px] w-[55px] mr-3 ml-3" /> */}
+                        <IoMdSpeedometer size={55} className="mr-3 ml-3 bg-gradient-to-r from-red-500 via-yellow-500 to-green-500 "/>
                         <span className="text-black text-lg font-bold tracking-wider text-[21px] md:text-[24px]"><Link href="/">Train Speed Test</Link></span>
                     </div>
                     <span onClick={toggle} className="md:hidden text-[22px] font-extrabold mr-4">☰</span>

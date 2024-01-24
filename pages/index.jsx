@@ -1,22 +1,46 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import dynamic from "next/dynamic";
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import { FaStopwatch } from "react-icons/fa6";
+import { AiFillStop } from "react-icons/ai";
 const ReactSpeedometer = dynamic(() => import("react-d3-speedometer"), { ssr: false });
 
 export default function Home() {
 
   const [speed, setSpeed] = useState(0);
+  const [isGeolocationActive, setIsGeolocationActive] = useState(false);
+  const [watchId, setWatchId] = useState(null);
+
+  function calculate() {
+    if (isGeolocationActive) {
+      navigator.geolocation.clearWatch(watchId);
+      setIsGeolocationActive(false);
+    }
+
+    else {
+      const newWatchId = navigator.geolocation.watchPosition(
+        (position) => { const newSpeed = position.coords.speed || 0; setSpeed(newSpeed); },
+        (error) => { console.error('Error getting location:', error.message); },
+        { enableHighAccuracy: true }
+      );
+      setIsGeolocationActive(true);
+      setWatchId(newWatchId);
+    }
+  }
+
+  /*
   function calculate() {
     const watchId = navigator.geolocation.watchPosition(
       (position) => { const newSpeed = position.coords.speed || 0; setSpeed(newSpeed); },
       (error) => { console.error('Error getting location:', error.message); },
       { enableHighAccuracy: true }
     );
+    setIsGeolocationActive(true);
     return () => { navigator.geolocation.clearWatch(watchId); };
   }
+*/
 
-  useEffect(() => { calculate() }, []);
 
   return (
     <>
@@ -24,15 +48,20 @@ export default function Home() {
       <div className="bg-[#f7f8f9] pt-5 pb-5">
         <div className="max-w-[1200px] mx-auto p-3 bg-[white] border border-solid border-[#d7d7d7] rounded-lg">
 
-          <h1 className="text-3xl font-bold text-center mt-5">Online Speedometer: Feel the Need for Speed – Discover Your Velocity Now !</h1>
+          <h1 className="text-3xl font-bold text-center mt-5">Train Speed Test: Feel the Need for Speed {'-'} Discover Your Velocity Now !</h1>
 
           <div className='flex justify-center mt-[100px] h-[220px]'>
             <ReactSpeedometer value={speed} needleColor="red" startColor="#09cb09" endColor="#ff1919" segments={10} maxSegmentLabels={10}
-              // currentValueText={`Speed: ${speed.toFixed(2)} km/s`} 
               minValue={0} maxValue={500} width={350} height={350} />
           </div>
 
           <div className="text-center font-bold text-2xl mt-5">{speed.toFixed(2)} km/s</div>
+
+          <div className="flex justify-center items-center mt-8">
+            <button onClick={calculate} className="flex items-center bg-black text-white px-4 py-2 tracking-wider font-bold rounded-md transition duration-300 ease-in-out hover:bg-[#2b2a2b] hover:text-gray-300">
+              {isGeolocationActive ? (<><AiFillStop className="mr-2" color="#ff3838" />Stop</>) : (<><FaStopwatch className="mr-2" color="#84fb66" />Start</>)}
+            </button>
+          </div>
 
 
 
@@ -62,29 +91,20 @@ export default function Home() {
 
             <h2 className="text-3xl font-bold mt-[45px] mb-5">FAQ&apos;s</h2>
 
-            <h3></h3>
-            <p></p>
+            <h3 className="text-2xl font-bold mb-2">How can I check my train speed ?</h3>
+            <p className="mb-[35px]">You can check train speed through this website.</p>
 
-            <h3></h3>
-            <p></p>
+            <h3 className="text-2xl font-bold mb-2">Is a train speed test accurate ?</h3>
+            <p className="mb-[35px]">No, train speed test is not accurate as it fully depends on GPS signal and your internet connectivity.</p>
 
-            <h3></h3>
-            <p></p>
+            <h3 className="text-2xl font-bold mb-2">Is it legal to do a train speed test ?</h3>
+            <p className="mb-[35px]">Yes you can check your train speed, it is completely safe.</p>
 
-            <h3></h3>
-            <p></p>
+            <h3 className="text-2xl font-bold mb-2">What is the average speed of a train in India ?</h3>
+            <p className="mb-[35px]">The average speed of train in India is just 55 km/s .</p>
 
-            <h3></h3>
-            <p></p>
-
-
-
-
-
-
-
-
-
+            <h3 className="text-2xl font-bold mb-2">How do this train speed tool work ?</h3>
+            <p className="mb-[35px]">This train speed tool access your location from the browser using the Geolocation API and updates when position changes. It watches the user's position and updates the provided callback whenever the position changes and hence the speed is predicted.</p>
 
 
 

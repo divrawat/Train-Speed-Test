@@ -37,10 +37,10 @@ const About = () => {
                         <p className="mt-2 mb-[40px]">  Welcome to our website, your premier destination for real-time train speed tracking using GPS technology. Our innovative tool is crafted to enhance your train travel experience by providing accurate and up-to-the-minute information about your train&apos;s speed. Whether you are a regular commuter, an adventurous traveler, or simply curious about the mechanics of your journey, our website is dedicated to keeping you well-informed.</p>
 
 
-                        <h2 className="text-3xl font-bold mb-6">Our Mission</h2>
+                        <h2 className="text-2xl font-bold mb-6">Our Mission</h2>
                         <p className="mt-2 mb-[40px]">At our website, our mission is to revolutionize how passengers interact with train travel. We recognize that knowing your train&apos;s speed can add an extra layer of insight and excitement to your trip. Our committed team of technology enthusiasts and train aficionados has collaborated to create a platform seamlessly integrating modern GPS capabilities with train travel, putting a world of information at your fingertips.</p>
 
-                        <h2 className="text-3xl font-bold mb-6">How It Works</h2>
+                        <h2 className="text-2xl font-bold mb-6">How It Works</h2>
                         <p className="mt-2 mb-[40px]">Our platform harnesses cutting-edge GPS technology on your mobile device to accurately calculate and display your train&apos;s current speed. Here&apos;s a simple breakdown:</p>
 
 
@@ -51,7 +51,7 @@ const About = () => {
                         <p className="mt-2 mb-[40px]"><b>3. Instant Results:</b> Within seconds, access real-time information about your train&apos;s speed. Watch the speedometer rise as you journey through picturesque landscapes or slow down during brief station stops.</p>
 
 
-                        <h2 className="text-3xl font-bold mb-6">Why Choose our website?</h2>
+                        <h2 className="text-2xl font-bold mb-6">Why Choose our website ?</h2>
 
                         <p className="mt-2 mb-[20px]"><b>1. Accuracy:</b> Our advanced GPS algorithms ensure you receive the most accurate and reliable speed information available.</p>
                         <p className="mt-2 mb-[20px]"><b>2. User-Friendly:</b> our website is designed with user simplicity in mind, making it accessible to anyone, regardless of technical expertise.</p>
@@ -63,7 +63,7 @@ const About = () => {
 
 
 
-                        <h2 className="text-3xl font-bold mb-6">Join Us on this Journey</h2>
+                        <h2 className="text-2xl font-bold mb-6">Join Us on this Journey</h2>
                         <p className="mt-2 mb-[40px]">We are passionate about elevating your train travel experience. Join us on this exciting journey of discovery as we continuously refine and expand our platform&apos;s features. At our website, we believe every train ride has a story to tell, and we are here to help you uncover the thrilling tale of speed, distance, and exploration.</p>
                         <p className="mt-2 mb-[40px]"> Thank you for choosing our website for your train speed tracking needs. Embark on your next train adventure with us and gain a new perspective on the world of rail travel.</p>
 

@@ -8,22 +8,22 @@ export default function Footer() {
 
     return (
 
+        <footer className="bg-gray-800 text-white mt-[50px]">
+            <div className="py-2 max-w-[1100px] mx-auto">
+                <div className="container mx-auto md:flex flex-wrap justify-between items-center">
+                    <div className="md:flex items-center text-center">
+                        <p className="font-bold p-3">&copy; {currentYear} @ Train Speed Test</p>
+                    </div>
 
-        <footer className="bg-[#e3e3e3] p-3">
-               
-               <div className="pt-5 text-center text-2xl">Copyright {currentYear} @ Train Speed Test</div>
+                    <ul className="md:flex md:space-x-7 text-center leading-[2.5] p-3 font-bold">
+                        <li>   <Link href="/contact">Contact</Link></li>
+                        <li>    <Link href="/about">About</Link></li>
+                        <li>   <Link href="/disclaimer">Disclaimer</Link></li>
+                        <li>    <Link href="/privacy-policy">Privacy Policy</Link></li>
+                    </ul>
 
-
-            <div className="md:pb-0 md:mt-0 mt-4 ">
-                <ul id="menu" className="sm:flex sm:space-x-10 sm:pb-0 items-center text-black font-bold text-center justify-center leading-[3] pt-5 md:pb-10">
-                    <li> <Link href="/">Home</Link></li>
-                    <li> <Link href="/about">About</Link></li>
-                    <li> <Link href="/contact">Contact</Link></li>
-                    <li> <Link href="/privacy-policy">Privacy Policy</Link></li>
-                    <li> <Link href="/disclaimer">Disclaimer</Link></li>
-                </ul>
+                </div>
             </div>
-
         </footer>
 
 
