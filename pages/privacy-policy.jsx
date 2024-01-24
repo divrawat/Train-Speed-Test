@@ -1,10 +1,34 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { DOMAIN } from "@/config";
+import Head from "next/head";
 
 const PrivacyPolicy = () => {
+
+
+    const description="Thanks you for visiting our website. This Privacy Policy is designed to help you understand how we collect, use, disclose, and safeguard your personal information when you visit our website or use our services through Google AdSense. By accessing or using our website, you consent to the practices described in this Privacy Policy."
+
+    const head = () => (
+        <Head>
+            <title>Privacy Policy</title>
+            <meta name="description" content={description} />
+            <meta name="robots" content="follow, index, noarchive, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+            <link rel="canonical" href={DOMAIN} />
+            <meta property="og:locale" content="en_US" />
+            <meta property="og:type" content="Train Speed Test" />
+            <meta property="og:title" content={`Train Speed Test - ${DOMAIN}`} />
+            <meta property="og:description" content={description} />
+            <meta property="og:url" content={DOMAIN} />
+            <meta property="og:site_name" content="Train Speed Test" />
+        </Head>
+    );
+
+
+
     return (
         <>
             <Navbar />
+            {head()}
             <div className="max-w-[1100px] mx-auto p-4 ">
                 <h1 className="text-center p-3 font-bold text-3xl">Privacy Policy</h1>
 

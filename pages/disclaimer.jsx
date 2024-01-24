@@ -1,12 +1,34 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-
+import Head from "next/head";
+import { DOMAIN } from "@/config";
 
 
 const Disclaimer = () => {
+
+    const description="Thank you for visiting Our Website. By using our website, you agree to comply with and be bound by the following disclaimer. If you do not agree with any part of this disclaimer, please do not use our website."
+
+    const head = () => (
+        <Head>
+            <title>Disclaimer</title>
+            <meta name="description" content={description} />
+            <meta name="robots" content="follow, index, noarchive, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+            <link rel="canonical" href={DOMAIN} />
+            <meta property="og:locale" content="en_US" />
+            <meta property="og:type" content="Train Speed Test" />
+            <meta property="og:title" content={`Train Speed Test - ${DOMAIN}`} />
+            <meta property="og:description" content={description} />
+            <meta property="og:url" content={DOMAIN} />
+            <meta property="og:site_name" content="Train Speed Test" />
+        </Head>
+    );
+
+
+
     return (
         <>
             <Navbar />
+            {head()}
             <div className="max-w-[1100px] mx-auto p-4 ">
 
                 <h1 className="text-center p-3 font-bold text-3xl">Disclaimer</h1>

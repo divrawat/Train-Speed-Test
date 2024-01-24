@@ -13,13 +13,14 @@ export default function Navbar() {
 
     return (
 
-        <nav className="md:pb-3 pt-3 border-b border-[#bebdbd]">
+        <nav className="md:pb-5 pt-3">
+             {/* <nav className="md:pb-3 pt-3 border-b border-[#bebdbd]"> */}
 
             <div className="container mx-auto md:flex items-center justify-center md:justify-between max-w-[1200px]">
                 <div className="flex items-center md:space-x-4 justify-between">
                     <div className="flex items-center">
                         <img src="/00.png" alt="Logo" className="h-[50px] w-[55px] mr-3 ml-3" />
-                        <span className="text-black text-lg font-bold tracking-wider text-[21px] md:text-[24px]">SpeedoMeter</span>
+                        <span className="text-black text-lg font-bold tracking-wider text-[21px] md:text-[24px]"><Link href="/">Train Speed Test</Link></span>
                     </div>
                     <span onClick={toggle} className="md:hidden text-[22px] font-extrabold mr-4">☰</span>
                 </div>

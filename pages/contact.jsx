@@ -1,12 +1,37 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { DOMAIN } from "@/config";
+import Head from "next/head";
 
 const Contact = () => {
+
+
+    const description="Thank you for reaching out to our Twitter Trends Tools. We value your feedback and inquiries. Please use the following information to get in touch with us."
+
+    const head = () => (
+        <Head>
+            <title>Contact</title>
+            <meta name="description" content={description} />
+            <meta name="robots" content="follow, index, noarchive, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+            <link rel="canonical" href={DOMAIN} />
+            <meta property="og:locale" content="en_US" />
+            <meta property="og:type" content="Train Speed Test" />
+            <meta property="og:title" content={`Train Speed Test - ${DOMAIN}`} />
+            <meta property="og:description" content={description} />
+            <meta property="og:url" content={DOMAIN} />
+            <meta property="og:site_name" content="Train Speed Test" />
+        </Head>
+    );
+
+
+
+
+
     return (
         <>
 
             <Navbar />
-
+            {head()}
             <div className="max-w-[1100px] mx-auto p-4 ">
 
                 <h1 className="text-center p-3 font-bold text-3xl">Contact</h1>

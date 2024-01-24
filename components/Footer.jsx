@@ -9,9 +9,9 @@ export default function Footer() {
     return (
 
 
-        <footer className="bg-[#e3e3e3] mt-10 p-3">
+        <footer className="bg-[#e3e3e3] p-3">
                
-               <div className="pt-5 text-center text-2xl">Copyright {currentYear} @ Speedometer</div>
+               <div className="pt-5 text-center text-2xl">Copyright {currentYear} @ Train Speed Test</div>
 
 
             <div className="md:pb-0 md:mt-0 mt-4 ">
