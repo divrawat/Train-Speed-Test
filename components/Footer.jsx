@@ -8,7 +8,7 @@ export default function Footer() {
 
     return (
 
-        <footer className="bg-gray-800 text-white mt-[50px]">
+        <footer className="bg-[#f7f8f9] mt-[50px]">
             <div className="py-2 max-w-[1100px] mx-auto">
                 <div className="container mx-auto md:flex flex-wrap justify-between items-center">
                     <div className="md:flex items-center text-center">
