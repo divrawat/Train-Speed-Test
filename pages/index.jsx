@@ -99,7 +99,7 @@ export default function Home() {
 
             <h2 className="text-3xl font-bold mb-11 mt-[100px]">Features</h2>
 
-            <div className="grid grid-cols-2 gap-10 mb-11">
+            <div className="md:grid md:grid-cols-2 gap-10 mb-11">
 
               <div className=" p-4 ">
                 <div className="flex justify-center"><TbFreeRights size={120} /></div>
