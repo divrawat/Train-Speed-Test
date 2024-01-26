@@ -1,19 +1,19 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { DOMAIN } from "@/config";
+import { DOMAIN, URL } from "@/config";
 import Head from "next/head";
 
 const Contact = () => {
 
 
-    const description = "Thank you for reaching out to our Twitter Trends Tools. We value your feedback and inquiries. Please use the following information to get in touch with us."
+    const description = "Thank you for reaching out to our Train Speed Test Tool. We value your feedback and inquiries. Please use the following information to get in touch with us."
 
     const head = () => (
         <Head>
             <title>Contact</title>
             <meta name="description" content={description} />
             <meta name="robots" content="follow, index, noarchive, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-            <link rel="canonical" href={DOMAIN} />
+            <link rel="canonical" href={`${URL}/contact`} />
             <meta property="og:locale" content="en_US" />
             <meta property="og:type" content="Train Speed Test" />
             <meta property="og:title" content={`Train Speed Test - ${DOMAIN}`} />

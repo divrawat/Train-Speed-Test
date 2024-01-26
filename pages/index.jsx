@@ -5,6 +5,8 @@ import { useState } from 'react';
 import { FaStopwatch } from "react-icons/fa6";
 import { AiFillStop } from "react-icons/ai";
 const ReactSpeedometer = dynamic(() => import("react-d3-speedometer"), { ssr: false });
+import Head from "next/head";
+import { DOMAIN, URL } from "@/config";
 
 export default function Home() {
 
@@ -29,21 +31,33 @@ export default function Home() {
     }
   }
 
-  /*
-  function calculate() {
-    const watchId = navigator.geolocation.watchPosition(
-      (position) => { const newSpeed = position.coords.speed || 0; setSpeed(newSpeed); },
-      (error) => { console.error('Error getting location:', error.message); },
-      { enableHighAccuracy: true }
-    );
-    setIsGeolocationActive(true);
-    return () => { navigator.geolocation.clearWatch(watchId); };
-  }
-*/
+  const description = "Train Speed Test: Feel the Need for Speed. Welcome to our Train Speed Test Tool, where you can have a bit of fun exploring how fast different trains zip around! 🚂💨 Whether you&apos;re a big train fan or just curious, our website lets you peek into the speedy world of trains in a super easy way."
+
+
+  const head = () => (
+      <Head>
+          <title>Train Speed Test</title>
+          <meta name="description" content={description} />
+          <meta name="robots" content="follow, index, noarchive, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
+          <link rel="canonical" href={URL}/>
+          <meta property="og:locale" content="en_US" />
+          <meta property="og:type" content={DOMAIN} />
+          <meta property="og:title" content={`Train Speed Test - ${DOMAIN}`} />
+          <meta property="og:description" content={description} />
+          <meta property="og:url" content={DOMAIN} />
+          <meta property="og:site_name" content={DOMAIN} />
+      </Head>
+  );
+
+
+
+
+
 
 
   return (
     <>
+    {head()}
       <Navbar />
       <div className="bg-[#f7f8f9] pt-5 pb-5">
         <div className="max-w-[1200px] mx-auto p-3 bg-[white] border border-solid border-[#d7d7d7] rounded-lg">

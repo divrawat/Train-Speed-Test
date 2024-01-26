@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { DOMAIN } from "@/config";
+import { DOMAIN, URL } from "@/config";
 import Head from "next/head";
 
 const PrivacyPolicy = () => {
@@ -13,7 +13,7 @@ const PrivacyPolicy = () => {
             <title>Privacy Policy</title>
             <meta name="description" content={description} />
             <meta name="robots" content="follow, index, noarchive, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-            <link rel="canonical" href={DOMAIN} />
+            <link rel="canonical" href={`${URL}/privacy-policy`} />
             <meta property="og:locale" content="en_US" />
             <meta property="og:type" content="Train Speed Test" />
             <meta property="og:title" content={`Train Speed Test - ${DOMAIN}`} />

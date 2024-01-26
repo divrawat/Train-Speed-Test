@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import Head from "next/head";
-import { DOMAIN } from "@/config";
+import { DOMAIN, URL } from "@/config";
 
 const About = () => {
 
@@ -13,7 +13,7 @@ const About = () => {
             <title>About</title>
             <meta name="description" content={description} />
             <meta name="robots" content="follow, index, noarchive, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
-            <link rel="canonical" href={DOMAIN} />
+            <link rel="canonical" href={`${URL}/about`} />
             <meta property="og:locale" content="en_US" />
             <meta property="og:type" content="Train Speed Test" />
             <meta property="og:title" content={`Train Speed Test - ${DOMAIN}`} />

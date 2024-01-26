@@ -1,1 +1,2 @@
-export const DOMAIN="http://localhost:3000"
+export const DOMAIN="Train Speed Test"
+export const URL="https://trainspeedtest.in.net"
