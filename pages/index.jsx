@@ -37,7 +37,7 @@ export default function Home() {
     }
   }
 
-  const description = "Train Speed Test: Feel the Need for Speed. Welcome to our Train Speed Test Tool, where you can have a bit of fun exploring how fast different trains zip around! 🚂💨 Whether you&apos;re a big train fan or just curious, our website lets you peek into the speedy world of trains in a super easy way."
+  const description = "Welcome to our Train Speed Test Tool, where you can have a bit of fun exploring how fast different trains zip around! 🚂💨 Whether you&apos;re a big train fan or just curious, our website lets you peek into the speedy world of trains in a super easy way."
 
 
   const head = () => (
@@ -46,9 +46,10 @@ export default function Home() {
       <meta name="description" content={description} />
       <meta name="robots" content="follow, index, noarchive, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
       <link rel="canonical" href={URL} />
+      <meta property="og:title" content={DOMAIN} />
+      <meta property="og:description" content={description} />
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content={DOMAIN} />
-      <meta property="og:title" content={`Train Speed Test - ${DOMAIN}`} />
       <meta property="og:description" content={description} />
       <meta property="og:url" content={DOMAIN} />
       <meta property="og:site_name" content={DOMAIN} />
