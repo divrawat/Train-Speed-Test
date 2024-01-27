@@ -46,7 +46,7 @@ export default function Home() {
       <meta name="description" content={description} />
       <meta name="robots" content="follow, index, noarchive, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
       <link rel="canonical" href={URL} />
-      <meta property="og:title" content={DOMAIN} />
+      <meta property="og:title" content={`${DOMAIN}: Feel the Need for Speed`} />
       <meta property="og:description" content={description} />
       <meta property="og:locale" content="en_US" />
       <meta property="og:type" content={DOMAIN} />
