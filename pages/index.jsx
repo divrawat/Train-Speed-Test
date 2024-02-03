@@ -13,6 +13,7 @@ import { FaTachometerAlt } from "react-icons/fa";
 import { FaCarRear } from "react-icons/fa6";
 import { PiPaintBucketFill } from "react-icons/pi";
 import { DOMAIN, URL } from "@/config";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -84,7 +85,7 @@ export default function Home() {
 
           <div className="mt-10 max-w-[1100px] pt-3 pb-10 pr-3 pl-3 mx-auto">
 
-            <p className="mb-[35px] text-center text-[17.5px]"> Welcome to our Train Speed Test Tool, where you can have a bit of fun exploring how fast your train runs 🚂💨 Whether you&apos;re a big train fan or just curious, our website lets you peek into the speedy world of trains in a super easy way.</p>
+            <p className="mb-[35px] text-center text-[17.5px]"> Welcome to our <Link href="/">Train Speed Test Tool</Link>, where you can have a bit of fun exploring how fast your train runs 🚂💨 Whether you&apos;re a big train fan or just curious, our website lets you peek into the speedy world of trains in a super easy way.</p>
 
             <p className="mb-[35px] text-center text-[17.5px]">   Ever wondered how fast your train goes ? Well, wonder no more! Our tool lets you compare train speeds from all over the globe in a simple click.</p>
 
@@ -125,7 +126,7 @@ export default function Home() {
               <div className="p-4">
                 <div className="flex justify-center"><FaTachometerAlt size={120} /></div>
                 <div className="text-2xl font-bold text-center mt-2">Range</div>
-                <p className="text-center mt-5 mb-5 p-2">Our train speed test tool can detect a speed of a vehicle ranging from 0 km/hr to 500 km/hr.</p>
+                <p className="text-center mt-5 mb-5 p-2">Our <Link href="/">train speed test</Link> train speed test tool can detect a speed of a vehicle ranging from 0 km/hr to 500 km/hr.</p>
               </div>
 
 
@@ -149,7 +150,7 @@ export default function Home() {
             <h2 className="text-3xl font-bold">Requirements</h2>
 
             <p className="mt-[25px]">1. Ensure you have a device equipped with both GPS and internet connectivity.</p>
-            <p className="mt-[10px]">2. Navigate to https://trainspeedtest.in.net - a platform providing complimentary train speed testing services.</p>
+            <p className="mt-[10px]">2. Navigate to https://trainspeedtest.in.net  - a platform providing complimentary train speed testing services.</p>
             <p className="mt-[10px]">3. Grant permission for location usage to enable the use of the online speedometer tool.</p>
 
 
@@ -187,7 +188,7 @@ export default function Home() {
 
             <h2 className="text-3xl font-bold mt-[45px] mb-5">Conclusion</h2>
 
-            <p className="mb-[35px]">Train Speed Test is a handy tool that gives you an accurate result by tracking GPS with your mobile phone. This easy-to-use tool provides the speed of a train while it&apos;s moving on the tracks. I highly recommend using Speed Test Pro for measuring online speed tests for trains, as it offers the best and most accurate results.</p>
+            <p className="mb-[35px]"><Link href="/">Train Speed Test Tool</Link> is a handy tool that gives you an accurate result by tracking GPS with your mobile phone. This easy-to-use tool provides the speed of a train while it&apos;s moving on the tracks. I highly recommend using Speed Test Pro for measuring online speed tests for trains, as it offers the best and most accurate results.</p>
             <p className="mb-[35px]">Simply turn on your GPS while using this website on your Android smartphone, and it will start tracking your train, providing you with the exact speed. Make sure to enable your GPS and grant permission for better accuracy. I&apos;ve tried this website multiple times, and it always gives precise results.</p>
             <p className="mb-[35px]">While a train speed test may seem simple for regular users checking train speeds, it holds great importance for engineers and higher authorities responsible for railway maintenance and development. Railway authorities use this tool to ensure passenger safety and enhance overall train performance.</p>
 

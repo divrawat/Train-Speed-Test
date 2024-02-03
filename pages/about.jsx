@@ -34,7 +34,7 @@ const About = () => {
                 <div className=" max-w-[1100px] pt-3 pb-10 pr-3 pl-3 mx-auto">
                         <h1 className="text-center p-3 font-bold text-3xl">About</h1>
 
-                        <p className="mt-2 mb-[40px]">  Welcome to our website, your premier destination for real-time train speed tracking using GPS technology. Our innovative tool is crafted to enhance your train travel experience by providing accurate and up-to-the-minute information about your train&apos;s speed. Whether you are a regular commuter, an adventurous traveler, or simply curious about the mechanics of your journey, our website is dedicated to keeping you well-informed.</p>
+                        <p className="mt-2 mb-[40px]">  Welcome to our website, your premier destination for real-time <Link href="/">Train Speed</Link> tracking using GPS technology. Our innovative tool is crafted to enhance your train travel experience by providing accurate and up-to-the-minute information about your train&apos;s speed. Whether you are a regular commuter, an adventurous traveler, or simply curious about the mechanics of your journey, our website is dedicated to keeping you well-informed.</p>
 
 
                         <h2 className="text-2xl font-bold mb-6">Our Mission</h2>
