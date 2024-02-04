@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { DOMAIN, URL } from "@/config";
 import Head from "next/head";
+import Link from "next/link";
 
 const Contact = () => {
 
