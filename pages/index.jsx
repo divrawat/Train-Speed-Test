@@ -41,208 +41,180 @@ export default function Home() {
 
   const list = [
     {
-        country: "China",
-        continent: "Asia",
-        MaxSpeed: "350",
-        RailNetWork: "45000 km"
+      country: "China",
+      continent: "Asia",
+      MaxSpeed: "350",
+      RailNetWork: "45000 km"
     },
     {
-        country: "Spain",
-        continent: "Europe",
-        MaxSpeed: "310",
-        RailNetWork: "4327.1 km"
+      country: "Spain",
+      continent: "Europe",
+      MaxSpeed: "310",
+      RailNetWork: "4327.1 km"
     },
     {
-        country: "France",
-        continent: "Europe",
-        MaxSpeed: "320",
-        RailNetWork: "2735 km"
+      country: "France",
+      continent: "Europe",
+      MaxSpeed: "320",
+      RailNetWork: "2735 km"
     },
     {
-        country: "Germany",
-        continent: "Europe",
-        MaxSpeed: "300",
-        RailNetWork: "1630.6 km"
+      country: "Germany",
+      continent: "Europe",
+      MaxSpeed: "300",
+      RailNetWork: "1630.6 km"
     },
     {
-        country: "Japan",
-        continent: "Asia",
-        MaxSpeed: "320",
-        RailNetWork: "2727 km"
+      country: "Japan",
+      continent: "Asia",
+      MaxSpeed: "320",
+      RailNetWork: "2727 km"
     },
     {
-        country: "Italy",
-        continent: "Europe",
-        MaxSpeed: "300",
-        RailNetWork: "921 km"
+      country: "Italy",
+      continent: "Europe",
+      MaxSpeed: "300",
+      RailNetWork: "921 km"
     },
     {
-        country: "United Kingdom",
-        continent: "Europe",
-        MaxSpeed: "300",
-        RailNetWork: "113 km"
+      country: "United Kingdom",
+      continent: "Europe",
+      MaxSpeed: "300",
+      RailNetWork: "113 km"
     },
     {
-        country: "South Korea",
-        continent: "Asia",
-        MaxSpeed: "305",
-        RailNetWork: "660.9 km"
+      country: "South Korea",
+      continent: "Asia",
+      MaxSpeed: "305",
+      RailNetWork: "660.9 km"
     },
     {
-        country: "Turkey",
-        continent: "Europe/Asia",
-        MaxSpeed: "300",
-        RailNetWork: "1211 km"
+      country: "Turkey",
+      continent: "Europe/Asia",
+      MaxSpeed: "300",
+      RailNetWork: "1211 km"
     },
     {
-        country: "Finland",
-        continent: "Europe",
-        MaxSpeed: "220",
-        RailNetWork: "1120 km"
+      country: "Finland",
+      continent: "Europe",
+      MaxSpeed: "220",
+      RailNetWork: "1120 km"
     },
     {
-        country: "Sweden",
-        continent: "Europe",
-        MaxSpeed: "205",
-        RailNetWork: "860 km"
+      country: "Sweden",
+      continent: "Europe",
+      MaxSpeed: "205",
+      RailNetWork: "860 km"
     },
     {
-        country: "Uzbekistan",
-        continent: "Asia",
-        MaxSpeed: "250",
-        RailNetWork: "741 km"
+      country: "Uzbekistan",
+      continent: "Asia",
+      MaxSpeed: "250",
+      RailNetWork: "741 km"
     },
     {
-        country: "United States",
-        continent: "North America",
-        MaxSpeed: "240",
-        RailNetWork: "735 km"
+      country: "United States",
+      continent: "North America",
+      MaxSpeed: "240",
+      RailNetWork: "735 km"
     },
     {
-        country: "Greece",
-        continent: "Europe",
-        MaxSpeed: "200",
-        RailNetWork: "700 km"
+      country: "Greece",
+      continent: "Europe",
+      MaxSpeed: "200",
+      RailNetWork: "700 km"
     },
     {
-        country: "Russia",
-        continent: "Europe",
-        MaxSpeed: "250",
-        RailNetWork: "650 km"
+      country: "Russia",
+      continent: "Europe",
+      MaxSpeed: "250",
+      RailNetWork: "650 km"
     },
     {
-        country: "Saudi Arabia",
-        continent: "Asia",
-        MaxSpeed: "300",
-        RailNetWork: "449 km"
+      country: "Saudi Arabia",
+      continent: "Asia",
+      MaxSpeed: "300",
+      RailNetWork: "449 km"
     },
     {
-        country: "Taiwan",
-        continent: "Asia",
-        MaxSpeed: "300",
-        RailNetWork: "332.1 km"
+      country: "Taiwan",
+      continent: "Asia",
+      MaxSpeed: "300",
+      RailNetWork: "332.1 km"
     },
     {
-        country: "Austria",
-        continent: "Europe",
-        MaxSpeed: "230",
-        RailNetWork: "254 km"
+      country: "Austria",
+      continent: "Europe",
+      MaxSpeed: "230",
+      RailNetWork: "254 km"
     },
     {
-        country: "Portugal",
-        continent: "Europe",
-        MaxSpeed: "220",
-        RailNetWork: "227 km"
+      country: "Portugal",
+      continent: "Europe",
+      MaxSpeed: "220",
+      RailNetWork: "227 km"
     },
     {
-        country: "Poland",
-        continent: "Europe",
-        MaxSpeed: "200",
-        RailNetWork: "224 km"
+      country: "Poland",
+      continent: "Europe",
+      MaxSpeed: "200",
+      RailNetWork: "224 km"
     },
     {
-        country: "Belgium",
-        continent: "Europe",
-        MaxSpeed: "300",
-        RailNetWork: "209 km"
+      country: "Belgium",
+      continent: "Europe",
+      MaxSpeed: "300",
+      RailNetWork: "209 km"
     },
     {
-        country: "Morocco",
-        continent: "Africa",
-        MaxSpeed: "320",
-        RailNetWork: "186 km"
+      country: "Morocco",
+      continent: "Africa",
+      MaxSpeed: "320",
+      RailNetWork: "186 km"
     },
     {
-        country: "Switzerland",
-        continent: "Europe",
-        MaxSpeed: "230",
-        RailNetWork: "178 km"
+      country: "Switzerland",
+      continent: "Europe",
+      MaxSpeed: "230",
+      RailNetWork: "178 km"
     },
     {
-        country: "Indonesia",
-        continent: "Asia",
-        MaxSpeed: "350",
-        RailNetWork: "142.3 km"
+      country: "Indonesia",
+      continent: "Asia",
+      MaxSpeed: "350",
+      RailNetWork: "142.3 km"
     },
     {
-        country: "Norway",
-        continent: "Europe",
-        MaxSpeed: "210",
-        RailNetWork: "139.5 km"
+      country: "Norway",
+      continent: "Europe",
+      MaxSpeed: "210",
+      RailNetWork: "139.5 km"
     },
     {
-        country: "Netherlands",
-        continent: "Europe",
-        MaxSpeed: "300",
-        RailNetWork: "90 km"
+      country: "Netherlands",
+      continent: "Europe",
+      MaxSpeed: "300",
+      RailNetWork: "90 km"
     },
     {
-        country: "Serbia",
-        continent: "Europe",
-        MaxSpeed: "200",
-        RailNetWork: "75 km"
+      country: "Serbia",
+      continent: "Europe",
+      MaxSpeed: "200",
+      RailNetWork: "75 km"
     },
     {
-        country: "Denmark",
-        continent: "Europe",
-        MaxSpeed: "200",
-        RailNetWork: "56 km"
+      country: "Denmark",
+      continent: "Europe",
+      MaxSpeed: "200",
+      RailNetWork: "56 km"
     },
     {
-        country: "Hong Kong",
-        continent: "Asia",
-        MaxSpeed: "200",
-        RailNetWork: "26 km"
+      country: "Hong Kong",
+      continent: "Asia",
+      MaxSpeed: "200",
+      RailNetWork: "26 km"
     }
-];
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  ];
 
 
 
@@ -295,13 +267,19 @@ export default function Home() {
 
           <div className="mt-10 max-w-[1100px] pt-3 pb-10 pr-3 pl-3 mx-auto">
 
-            <p className="mb-[35px] text-center text-[17.5px]"> Welcome to our <Link href="/">Train Speed Test Tool</Link>, where you can have a bit of fun exploring how fast your train runs 🚂💨 Whether you&apos;re a big train fan or just curious, our website lets you peek into the speedy world of trains in a super easy way.</p>
+            {/* <p className="mb-[35px] text-center text-[17.5px]"> Welcome to our <Link href="/">Train Speed Test Tool</Link>, where you can have a bit of fun exploring how fast your train runs 🚂💨 Whether you&apos;re a big train fan or just curious, our website lets you peek into the speedy world of trains in a super easy way.</p> */}
 
-            <p className="mb-[35px] text-center text-[17.5px]">   Ever wondered how fast your train goes ? Well, wonder no more! Our tool lets you compare train speeds from all over the globe in a simple click.</p>
+            <p className="mb-[35px] text-center text-[17.5px]"> At our <Link href="/">Train Speed Test</Link> Tool  you can check how fast your train is travelling.</p>
 
-            <p className="mb-[35px] text-center text-[17.5px]">  It&apos;s like a little adventure where you can check out the fastest trains out there. No need to be a tech genius {`-`} our website is designed for everyone. Just hop on, explore, and enjoy the ride{'!'} 🌍🚄</p>
+            <p className="mb-[35px] text-center text-[17.5px]">   Ever wondered how fast your train goes ? You can check it through our tool which is 100% free.</p>
 
-            <p className="mb-[90px] text-center text-[17.5px]">  So, if you&apos;re into trains or just looking for a cool way to spend a few minutes, use our train speed test tool. Fasten your seatbelt, and let&apos;s have some speed-happy fun together 🚀🎉</p>
+            <p className="mb-[35px] text-center text-[17.5px]">  You will only need to turn on your GPS and allow browser to track your location.</p>
+
+            <p className="mb-[35px] text-center text-[17.5px]"> Now you will have a question of this tool's accuracy, generally it is not 100% accurate as it is dependent on Browser's GeoLocation API and your Internet speed.</p>
+
+            {/* <p className="mb-[35px] text-center text-[17.5px]">  It&apos;s like a little adventure where you can check out the fastest trains out there. No need to be a tech genius {`-`} our website is designed for everyone. Just hop on, explore, and enjoy the ride{'!'} 🌍🚄</p>
+
+            <p className="mb-[90px] text-center text-[17.5px]">  So, if you&apos;re into trains or just looking for a cool way to spend a few minutes, use our train speed test tool. Fasten your seatbelt, and let&apos;s have some speed-happy fun together 🚀🎉</p> */}
 
 
 
@@ -359,13 +337,17 @@ export default function Home() {
 
             <h2 className="text-3xl font-bold">Requirements</h2>
 
-            <p className="mt-[25px]">1. Ensure you have a device equipped with both GPS and internet connectivity.</p>
-            <p className="mt-[10px]">2. Navigate to https://trainspeedtest.in.net  - a platform providing complimentary train speed testing services.</p>
-            <p className="mt-[10px]">3. Grant permission for location usage to enable the use of the online speedometer tool.</p>
+            <p className="mt-[25px]">1. You should have a smartphone with both GPS and Internet.</p>
+            <p className="mt-[10px]">2. Go to https://trainspeedtest.in.net  for testing train speed.</p>
+            <p className="mt-[10px]">3. You have to give access to the browser to activate browser's location API.</p>
 
 
             <h2 className="text-3xl font-bold mt-[45px]">Train Speed</h2>
-            <p className="mt-[20px]">A Train Speed Test is a tool or service that allows users to measure and compare the speeds of different trains. Typically offered online, these tests provide information on the velocity of trains, enabling enthusiasts, researchers, or curious individuals to explore and compare the speeds of various trains from around the world. Users may input specific parameters or select trains from a database to view their respective speeds, contributing to a better understanding of the diverse capabilities of different railway systems.</p>
+            <p className="mt-[20px]">
+
+              Train Speed is a very important criteria for an developed or developing country. Generally the trains in developed country moves at a very fast rate then developing or under developed world. China and japan have the most advanced and fastest trains as well as train routes. Fastest train in the world is Maglev train which is in Japan. It can reach a speed of 603 km/hr. So it is very important to have a good train speed for a country and you have to test your train speed throughout your train journey.
+
+            </p>
 
 
 
@@ -391,21 +373,20 @@ export default function Home() {
 
             <h2 className="text-3xl font-bold mt-[45px] mb-5">Online GPS Speedometer</h2>
 
-            <p className="mb-[35px]">The GPS Speedometer, also known as the Global Positioning System Speedometer, is a device that operates based on the governor principle to provide precise speed measurements. It is widely recognized for its accuracy in tracking speed across various vehicles. In contemporary times, virtually every vehicle worldwide is equipped with a speedometer to gauge velocity.</p>
-            <p className="mb-[35px]">The Online GPS Speedometer is readily accessible via the internet. Leveraging your mobile device&apos;s GPS capabilities, it efficiently pinpoints your location while you are in transit. Our online speedometer tool harnesses this technology to accurately detect the speed of trains. By employing GPS technology, we can meticulously monitor train speeds and provide you with precise measurements.</p>
-            <p className="mb-[35px]">Our tool utilizes online GPS technology, harnessing your device&apos;s GPS functionality through internet connectivity. This enables us to gather precise location data and coordinates, which are then translated into an online speedometer capable of accurately determining train speeds.</p>
+            <p className="mb-[35px]">The GPS Speedometer, additionally referred to as the Global Positioning System Speedometer, is a device that operates based at the governor principle to provide particular velocity measurements. It is broadly recognized for its accuracy in tracking velocity across various automobiles. In modern instances, actually each car international is prepared with a speedometer to gauge velocity.</p>
+            <p className="mb-[35px]">The Online GPS Speedometer is readily available via the internet. Leveraging your cell device's GPS competencies, it efficiently pinpoints your region even as you're in transit. Our on line speedometer device harnesses this technology to correctly discover the speed of trains. By using GPS era, we will meticulously screen train speeds and offer you with specific measurements.</p>
 
+            <p className="mb-[35px]">Our device makes use of online GPS generation, harnessing your device's GPS capability via net connectivity. This allows us to gather precise vicinity data and coordinates, that are then translated into an online speedometer able to appropriately determining educate speeds.</p>
 
 
             <h2 className="text-3xl font-bold mt-[45px] mb-5">Conclusion</h2>
 
-            <p className="mb-[35px]"><Link href="/">Train Speed Test Tool</Link> is a handy tool that gives you an accurate result by tracking GPS with your mobile phone. This easy-to-use tool provides the speed of a train while it&apos;s moving on the tracks. I highly recommend using Speed Test Pro for measuring online speed tests for trains, as it offers the best and most accurate results.</p>
-            <p className="mb-[35px]">Simply turn on your GPS while using this website on your Android smartphone, and it will start tracking your train, providing you with the exact speed. Make sure to enable your GPS and grant permission for better accuracy. I&apos;ve tried this website multiple times, and it always gives precise results.</p>
-            <p className="mb-[35px]">While a train speed test may seem simple for regular users checking train speeds, it holds great importance for engineers and higher authorities responsible for railway maintenance and development. Railway authorities use this tool to ensure passenger safety and enhance overall train performance.</p>
 
+            <p className="mb-[35px]"> <Link href="/">Train speed test</Link>  tool is a top notch tool that can give upto 90% accuracy on train speed with the use of Browser's Geolocation API whether it is google chrome or brave browser or Microsoft's Bing. This is a very easy to use tool and I highly recommend it to use to measure your train's speed.</p>
 
+            <p className="mb-[35px]"> Turn on your GPS using this website and give your location access permission to your browser  and after that it will start tracking your train's speed.</p>
 
-   
+            <p className="mb-[35px]"> A train speed test is a very important metric for Engineers and high authority companies relating to railways for maintenance and development. Railway authorities use this tool to ensure passenger safety and enhance overall train performance.</p>
 
 
 
@@ -416,43 +397,43 @@ export default function Home() {
 
 
             <div className="relative overflow-x-auto">
-            <table className="w-full text-sm text-left rtl:text-right text-white ">
+              <table className="w-full text-sm text-left rtl:text-right text-white ">
                 <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
-                    <tr>
-                        <th scope="col" className="px-6 py-3">
-                            Country
-                        </th>
-                        <th scope="col" className="px-6 py-3">
-                            Continent
-                        </th>
-                        <th scope="col" className="px-6 py-3">
-                            MaxSpeed (in Km)
-                        </th>
-                        <th scope="col" className="px-6 py-3">
-                            RailNetwork
-                        </th>
-                    </tr>
+                  <tr>
+                    <th scope="col" className="px-6 py-3">
+                      Country
+                    </th>
+                    <th scope="col" className="px-4 py-3">
+                      Continent
+                    </th>
+                    <th scope="col" className="px-4 py-3">
+                      MaxSpeed (in km/hr)
+                    </th>
+                    <th scope="col" className="px-4 py-3">
+                      RailNetwork
+                    </th>
+                  </tr>
                 </thead>
                 <tbody>
-                    {list.map((list, index) => (
-                        <tr key={index} className="bg-black">
-                            <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap text-white">
-                                {list.country}
-                            </th>
-                            <td className="px-6 py-4">
-                                {list.continent}
-                            </td>
-                            <td className="px-6 py-4">
-                                {list.MaxSpeed}
-                            </td>
-                            <td className="px-6 py-4">
-                                {list.RailNetWork}
-                            </td>
-                        </tr>
-                    ))}
+                  {list.map((list, index) => (
+                    <tr key={index} className="bg-black">
+                      <th scope="row" className="px-8 py-4 font-medium whitespace-nowrap text-white">
+                        {list.country}
+                      </th>
+                      <td className="px-6 py-4">
+                        {list.continent}
+                      </td>
+                      <td className="px-6 py-4">
+                        {list.MaxSpeed}
+                      </td>
+                      <td className="px-6 py-4">
+                        {list.RailNetWork}
+                      </td>
+                    </tr>
+                  ))}
                 </tbody>
-            </table>
-        </div>
+              </table>
+            </div>
 
 
 
