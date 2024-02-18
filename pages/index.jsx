@@ -426,7 +426,7 @@ export default function Home() {
                             Continent
                         </th>
                         <th scope="col" className="px-6 py-3">
-                            MaxSpeed
+                            MaxSpeed (in Km)
                         </th>
                         <th scope="col" className="px-6 py-3">
                             RailNetwork
