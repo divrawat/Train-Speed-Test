@@ -38,12 +38,222 @@ export default function Home() {
     }
   }
 
+
+  const list = [
+    {
+        country: "China",
+        continent: "Asia",
+        MaxSpeed: "350",
+        RailNetWork: "45000 km"
+    },
+    {
+        country: "Spain",
+        continent: "Europe",
+        MaxSpeed: "310",
+        RailNetWork: "4327.1 km"
+    },
+    {
+        country: "France",
+        continent: "Europe",
+        MaxSpeed: "320",
+        RailNetWork: "2735 km"
+    },
+    {
+        country: "Germany",
+        continent: "Europe",
+        MaxSpeed: "300",
+        RailNetWork: "1630.6 km"
+    },
+    {
+        country: "Japan",
+        continent: "Asia",
+        MaxSpeed: "320",
+        RailNetWork: "2727 km"
+    },
+    {
+        country: "Italy",
+        continent: "Europe",
+        MaxSpeed: "300",
+        RailNetWork: "921 km"
+    },
+    {
+        country: "United Kingdom",
+        continent: "Europe",
+        MaxSpeed: "300",
+        RailNetWork: "113 km"
+    },
+    {
+        country: "South Korea",
+        continent: "Asia",
+        MaxSpeed: "305",
+        RailNetWork: "660.9 km"
+    },
+    {
+        country: "Turkey",
+        continent: "Europe/Asia",
+        MaxSpeed: "300",
+        RailNetWork: "1211 km"
+    },
+    {
+        country: "Finland",
+        continent: "Europe",
+        MaxSpeed: "220",
+        RailNetWork: "1120 km"
+    },
+    {
+        country: "Sweden",
+        continent: "Europe",
+        MaxSpeed: "205",
+        RailNetWork: "860 km"
+    },
+    {
+        country: "Uzbekistan",
+        continent: "Asia",
+        MaxSpeed: "250",
+        RailNetWork: "741 km"
+    },
+    {
+        country: "United States",
+        continent: "North America",
+        MaxSpeed: "240",
+        RailNetWork: "735 km"
+    },
+    {
+        country: "Greece",
+        continent: "Europe",
+        MaxSpeed: "200",
+        RailNetWork: "700 km"
+    },
+    {
+        country: "Russia",
+        continent: "Europe",
+        MaxSpeed: "250",
+        RailNetWork: "650 km"
+    },
+    {
+        country: "Saudi Arabia",
+        continent: "Asia",
+        MaxSpeed: "300",
+        RailNetWork: "449 km"
+    },
+    {
+        country: "Taiwan",
+        continent: "Asia",
+        MaxSpeed: "300",
+        RailNetWork: "332.1 km"
+    },
+    {
+        country: "Austria",
+        continent: "Europe",
+        MaxSpeed: "230",
+        RailNetWork: "254 km"
+    },
+    {
+        country: "Portugal",
+        continent: "Europe",
+        MaxSpeed: "220",
+        RailNetWork: "227 km"
+    },
+    {
+        country: "Poland",
+        continent: "Europe",
+        MaxSpeed: "200",
+        RailNetWork: "224 km"
+    },
+    {
+        country: "Belgium",
+        continent: "Europe",
+        MaxSpeed: "300",
+        RailNetWork: "209 km"
+    },
+    {
+        country: "Morocco",
+        continent: "Africa",
+        MaxSpeed: "320",
+        RailNetWork: "186 km"
+    },
+    {
+        country: "Switzerland",
+        continent: "Europe",
+        MaxSpeed: "230",
+        RailNetWork: "178 km"
+    },
+    {
+        country: "Indonesia",
+        continent: "Asia",
+        MaxSpeed: "350",
+        RailNetWork: "142.3 km"
+    },
+    {
+        country: "Norway",
+        continent: "Europe",
+        MaxSpeed: "210",
+        RailNetWork: "139.5 km"
+    },
+    {
+        country: "Netherlands",
+        continent: "Europe",
+        MaxSpeed: "300",
+        RailNetWork: "90 km"
+    },
+    {
+        country: "Serbia",
+        continent: "Europe",
+        MaxSpeed: "200",
+        RailNetWork: "75 km"
+    },
+    {
+        country: "Denmark",
+        continent: "Europe",
+        MaxSpeed: "200",
+        RailNetWork: "56 km"
+    },
+    {
+        country: "Hong Kong",
+        continent: "Asia",
+        MaxSpeed: "200",
+        RailNetWork: "26 km"
+    }
+];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   const description = "Welcome to our Train Speed Test Tool, where you can have a bit of fun exploring how fast different trains zip around! 🚂💨 Whether you&apos;re a big train fan or just curious, our website lets you peek into the speedy world of trains in a super easy way."
 
 
   const head = () => (
     <Head>
-      <title>Train Speed Test</title>
+      <title>Train Speed Test: Feel the Need for Speed</title>
       <meta name="description" content={description} />
       <meta name="robots" content="follow, index, noarchive, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
       <link rel="canonical" href={URL} />
@@ -63,20 +273,20 @@ export default function Home() {
     <>
       {head()}
       <Navbar />
-      <div className="bg-[#f7f8f9] pt-5 pb-5">
-        <div className="max-w-[1200px] mx-auto p-3 bg-[white] text-[#1a202c] border border-solid border-[#d7d7d7] rounded-lg">
+      <div className="bg-gray-800 pt-5 pb-5 " style={{ backgroundImage: "url(/Back.webp)" }}>
+        <div className="max-w-[1200px] mx-auto p-3 text-white rounded-lg bg-black opacity-90" >
 
           <h1 className="text-3xl font-bold text-center mt-5 ">Train Speed Test - Feel the Need for Speed</h1>
 
-          <div className='flex justify-center mt-[100px] h-[220px]'>
+          <div className='flex justify-center mt-[100px] h-[220px] '>
             <ReactSpeedometer value={speed} needleColor="red" startColor="#09cb09" endColor="#ff1919" segments={10} maxSegmentLabels={10}
               minValue={0} maxValue={500} width={350} height={350} />
           </div>
 
-          <div className="text-center font-bold text-2xl mt-5">{speed.toFixed(2)} km/hr</div>
+          <div className="text-center font-bold text-2xl mt-5 ">{speed.toFixed(2)} km/hr</div>
 
           <div className="flex justify-center items-center mt-8">
-            <button onClick={calculate} className="flex items-center bg-black text-white px-4 py-2 tracking-wider font-bold rounded-md transition duration-300 ease-in-out hover:bg-[#2b2a2b] hover:text-gray-300">
+            <button onClick={calculate} className="flex items-center border border-gray-300 bg-black  px-4 py-2 tracking-wider font-bold rounded-md transition duration-300 ease-in-out hover:bg-[#2b2a2b] hover:text-gray-300">
               {isGeolocationActive ? (<><AiFillStop className="mr-2" color="#ff3838" />STOP</>) : (<><FaStopwatch className="mr-2" color="#84fb66" />START</>)}
             </button>
           </div>
@@ -186,11 +396,68 @@ export default function Home() {
             <p className="mb-[35px]">Our tool utilizes online GPS technology, harnessing your device&apos;s GPS functionality through internet connectivity. This enables us to gather precise location data and coordinates, which are then translated into an online speedometer capable of accurately determining train speeds.</p>
 
 
+
             <h2 className="text-3xl font-bold mt-[45px] mb-5">Conclusion</h2>
 
             <p className="mb-[35px]"><Link href="/">Train Speed Test Tool</Link> is a handy tool that gives you an accurate result by tracking GPS with your mobile phone. This easy-to-use tool provides the speed of a train while it&apos;s moving on the tracks. I highly recommend using Speed Test Pro for measuring online speed tests for trains, as it offers the best and most accurate results.</p>
             <p className="mb-[35px]">Simply turn on your GPS while using this website on your Android smartphone, and it will start tracking your train, providing you with the exact speed. Make sure to enable your GPS and grant permission for better accuracy. I&apos;ve tried this website multiple times, and it always gives precise results.</p>
             <p className="mb-[35px]">While a train speed test may seem simple for regular users checking train speeds, it holds great importance for engineers and higher authorities responsible for railway maintenance and development. Railway authorities use this tool to ensure passenger safety and enhance overall train performance.</p>
+
+
+
+   
+
+
+
+
+
+            <h2 className="text-3xl font-bold mb-11 mt-[100px]">List Of High-Speed Railway Lines</h2>
+
+
+
+            <div className="relative overflow-x-auto">
+            <table className="w-full text-sm text-left rtl:text-right text-white ">
+                <thead className="text-xs text-gray-700 uppercase bg-gray-50 ">
+                    <tr>
+                        <th scope="col" className="px-6 py-3">
+                            Country
+                        </th>
+                        <th scope="col" className="px-6 py-3">
+                            Continent
+                        </th>
+                        <th scope="col" className="px-6 py-3">
+                            MaxSpeed
+                        </th>
+                        <th scope="col" className="px-6 py-3">
+                            RailNetwork
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {list.map((list, index) => (
+                        <tr key={index} className="bg-black">
+                            <th scope="row" className="px-6 py-4 font-medium whitespace-nowrap text-white">
+                                {list.country}
+                            </th>
+                            <td className="px-6 py-4">
+                                {list.continent}
+                            </td>
+                            <td className="px-6 py-4">
+                                {list.MaxSpeed}
+                            </td>
+                            <td className="px-6 py-4">
+                                {list.RailNetWork}
+                            </td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </div>
+
+
+
+
+
 
 
 

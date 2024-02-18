@@ -11,7 +11,7 @@ export default function Navbar() {
 
     return (
 
-        <nav className="md:pb-3 pt-3 bg-[#f7f8f9]">
+        <nav className="md:pb-3 pt-3 bg-gray-800 text-white" style={{ backgroundImage: "url(/Nav.jpg)" }}>
             <div className="container mx-auto md:flex items-center justify-center md:justify-between max-w-[1200px]">
                 <div className="flex items-center md:space-x-4 justify-between">
                     <div className="flex items-center">
