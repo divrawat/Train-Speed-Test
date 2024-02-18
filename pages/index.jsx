@@ -267,20 +267,13 @@ export default function Home() {
 
           <div className="mt-10 max-w-[1100px] pt-3 pb-10 pr-3 pl-3 mx-auto">
 
-            {/* <p className="mb-[35px] text-center text-[17.5px]"> Welcome to our <Link href="/">Train Speed Test Tool</Link>, where you can have a bit of fun exploring how fast your train runs 🚂💨 Whether you&apos;re a big train fan or just curious, our website lets you peek into the speedy world of trains in a super easy way.</p> */}
-
             <p className="mb-[35px] text-center text-[17.5px]"> At our <Link href="/">Train Speed Test</Link> Tool  you can check how fast your train is travelling.</p>
 
             <p className="mb-[35px] text-center text-[17.5px]">   Ever wondered how fast your train goes ? You can check it through our tool which is 100% free.</p>
 
             <p className="mb-[35px] text-center text-[17.5px]">  You will only need to turn on your GPS and allow browser to track your location.</p>
 
-            <p className="mb-[35px] text-center text-[17.5px]"> Now you will have a question of this tool's accuracy, generally it is not 100% accurate as it is dependent on Browser's GeoLocation API and your Internet speed.</p>
-
-            {/* <p className="mb-[35px] text-center text-[17.5px]">  It&apos;s like a little adventure where you can check out the fastest trains out there. No need to be a tech genius {`-`} our website is designed for everyone. Just hop on, explore, and enjoy the ride{'!'} 🌍🚄</p>
-
-            <p className="mb-[90px] text-center text-[17.5px]">  So, if you&apos;re into trains or just looking for a cool way to spend a few minutes, use our train speed test tool. Fasten your seatbelt, and let&apos;s have some speed-happy fun together 🚀🎉</p> */}
-
+            <p className="mb-[35px] text-center text-[17.5px]"> Now you will have a question of this tool&apos;s accuracy, generally it is not 100% accurate as it is dependent on Browser&apos;s GeoLocation API and your Internet speed.</p>
 
 
             <img src="/train.jpg" alt="White Bullet Train" className="md:w-[100%]" />
@@ -339,7 +332,7 @@ export default function Home() {
 
             <p className="mt-[25px]">1. You should have a smartphone with both GPS and Internet.</p>
             <p className="mt-[10px]">2. Go to https://trainspeedtest.in.net  for testing train speed.</p>
-            <p className="mt-[10px]">3. You have to give access to the browser to activate browser's location API.</p>
+            <p className="mt-[10px]">3. You have to give access to the browser to activate browser&apos;s location API.</p>
 
 
             <h2 className="text-3xl font-bold mt-[45px]">Train Speed</h2>
@@ -374,17 +367,17 @@ export default function Home() {
             <h2 className="text-3xl font-bold mt-[45px] mb-5">Online GPS Speedometer</h2>
 
             <p className="mb-[35px]">The GPS Speedometer, additionally referred to as the Global Positioning System Speedometer, is a device that operates based at the governor principle to provide particular velocity measurements. It is broadly recognized for its accuracy in tracking velocity across various automobiles. In modern instances, actually each car international is prepared with a speedometer to gauge velocity.</p>
-            <p className="mb-[35px]">The Online GPS Speedometer is readily available via the internet. Leveraging your cell device's GPS competencies, it efficiently pinpoints your region even as you're in transit. Our on line speedometer device harnesses this technology to correctly discover the speed of trains. By using GPS era, we will meticulously screen train speeds and offer you with specific measurements.</p>
+            <p className="mb-[35px]">The Online GPS Speedometer is readily available via the internet. Leveraging your cell device&apos;s GPS competencies, it efficiently pinpoints your region even as you&apos;re in transit. Our on line speedometer device harnesses this technology to correctly discover the speed of trains. By using GPS era, we will meticulously screen train speeds and offer you with specific measurements.</p>
 
-            <p className="mb-[35px]">Our device makes use of online GPS generation, harnessing your device's GPS capability via net connectivity. This allows us to gather precise vicinity data and coordinates, that are then translated into an online speedometer able to appropriately determining educate speeds.</p>
+            <p className="mb-[35px]">Our device makes use of online GPS generation, harnessing your device&apos;s GPS capability via net connectivity. This allows us to gather precise vicinity data and coordinates, that are then translated into an online speedometer able to appropriately determining educate speeds.</p>
 
 
             <h2 className="text-3xl font-bold mt-[45px] mb-5">Conclusion</h2>
 
 
-            <p className="mb-[35px]"> <Link href="/">Train speed test</Link>  tool is a top notch tool that can give upto 90% accuracy on train speed with the use of Browser's Geolocation API whether it is google chrome or brave browser or Microsoft's Bing. This is a very easy to use tool and I highly recommend it to use to measure your train's speed.</p>
+            <p className="mb-[35px]"> <Link href="/">Train speed test</Link>  tool is a top notch tool that can give upto 90% accuracy on train speed with the use of Browser&apos;s Geolocation API whether it is google chrome or brave browser or Microsoft&apos;s Bing. This is a very easy to use tool and I highly recommend it to use to measure your train&apos;s speed.</p>
 
-            <p className="mb-[35px]"> Turn on your GPS using this website and give your location access permission to your browser  and after that it will start tracking your train's speed.</p>
+            <p className="mb-[35px]"> Turn on your GPS using this website and give your location access permission to your browser  and after that it will start tracking your train&apos;s speed.</p>
 
             <p className="mb-[35px]"> A train speed test is a very important metric for Engineers and high authority companies relating to railways for maintenance and development. Railway authorities use this tool to ensure passenger safety and enhance overall train performance.</p>
 
