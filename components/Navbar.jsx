@@ -1,13 +1,21 @@
 import Link from "next/link";
 import { IoMdSpeedometer } from "react-icons/io";
+import React, { useRef } from 'react';
 
 export default function Navbar() {
 
-    function toggle() {
-        let x = document.getElementById("menu")
-        if (x.style.display === "block") { x.style.display = "none"; }
-        else { x.style.display = "block" }
-    }
+    const menuRef = useRef(null);
+
+    const toggle = (ref) => {
+        if (ref.current.style.display === 'block') {
+            ref.current.style.display = 'none';
+        } else {
+            ref.current.style.display = 'block';
+        }
+    };
+
+
+
 
     return (
 
@@ -22,7 +30,7 @@ export default function Navbar() {
                 </div>
 
                 <div className="md:pb-0 pr-3 md:mt-0 mt-4 md:bg-transparent ">
-                    <ul id="menu" className="md:flex md:space-x-10 md:pb-0 pb-4 items-center font-bold  text-center leading-[3] hidden">
+                    <ul id="menu" ref={menuRef} className="md:flex md:space-x-10 md:pb-0 pb-4 items-center font-bold  text-center leading-[3] hidden">
                         {/* <li> <Link href="/">Home</Link></li> */}
                         <li> <Link href="/about">About</Link></li>
                         <li> <Link href="/contact">Contact</Link></li>
