@@ -8,7 +8,7 @@ export default function Footer() {
 
     return (
 
-        <footer className=" text-white" style={{ backgroundImage: "url(/Nav.jpg)" }}>
+        <footer className="bg-black text-white">
             <div className="py-2 max-w-[1100px] mx-auto">
                 <div className="container mx-auto md:flex flex-wrap justify-between items-center">
                     <div className="md:flex items-center text-center">
