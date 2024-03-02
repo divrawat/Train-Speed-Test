@@ -217,36 +217,6 @@ export default function Home() {
   ];
 
 
-  const schema =
-  {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://trainspeedtest.in.net/"
-    },
-    "headline": "Train Speed Test: Feel The Need For Speed",
-    "description": "Welcome to our Train Speed Test Tool, where you can have a bit of fun exploring how fast different trains zip around! 🚂💨 Whether you&apos;re a big train fan or just curious, our website lets you peek into the speedy world of trains in a super easy way.",
-    "image": "https://trainspeedtest.in.net/train.jpg",
-    "author": {
-      "@type": "Person",
-      "name": "Divyanshu Rawat",
-      "url": "https://www.linkedin.com/in/divyanshu-rawat-380911210/"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Divyanshu Rawat",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://trainspeedtest.in.net/train.jpg"
-      }
-    },
-    "datePublished": "2024-02-02",
-    "dateModified": "2024-02-26"
-  }
-
-
-
 
 
   const description = "Welcome to our Train Speed Test Tool, where you can have a bit of fun exploring how fast different trains zip around! 🚂💨 Whether you&apos;re a big train fan or just curious, our website lets you peek into the speedy world of trains in a super easy way."
@@ -254,7 +224,7 @@ export default function Home() {
 
   const head = () => (
     <Head>
-      <title>Train Speed Test: Feel the Need for Speed</title>
+      <title>Train Speed Test</title>
       <meta name="description" content={description} />
       <meta name="robots" content="follow, index, noarchive, max-snippet:-1, max-video-preview:-1, max-image-preview:large" />
       <link rel="canonical" href={URL} />
@@ -265,7 +235,7 @@ export default function Home() {
       <meta property="og:description" content={description} />
       <meta property="og:url" content={DOMAIN} />
       <meta property="og:site_name" content={DOMAIN} />
-      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} /> */}
     </Head>
   );
 
@@ -308,7 +278,7 @@ export default function Home() {
                 <p className="mb-[35px] text-center text-[17.5px]"> Now you will have a question of this tool&apos;s accuracy, generally it is not 100% accurate as it is dependent on Browser&apos;s GeoLocation API and your Internet speed.</p>
 
 
-                <img src="/train.jpg" alt="White Bullet Train" className="md:w-[100%]" />
+                <img src="/train2.jpg" alt="White Bullet Train" className="md:w-[100%]" />
 
 
                 <h2 className="text-3xl font-bold bg-black mt-[45px] text-white p-3 text-center">Requirements</h2>
