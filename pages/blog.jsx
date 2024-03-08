@@ -11,7 +11,7 @@ const Blog = () => {
 
             <div className="flex flex-wrap md:gap-[100px] gap-10 justify-center md:p-10 p-3">
 
-                <div className="w-[400px] border border-gray-300">
+                <div className="w-[400px] border border-gray-300 cursor-pointer">
                     <Link href="/facts-about-indian-trains">
                         <div>
                             <img className="w-[400px] h-[300px] object-cover" src="https://c.ndtvimg.com/2022-06/pec7cqno_trains-650_625x300_20_June_22.jpg" alt="" />
@@ -23,7 +23,7 @@ const Blog = () => {
 
 
 
-                <div className="w-[400px] border border-gray-300">
+                <div className="w-[400px] border border-gray-300 cursor-pointer">
                     <Link href="/maharaja-express">
                         <div>
                             <img className="w-[400px] h-[300px] object-cover" src="https://www.the-maharajas.com/assets/img/photo_gallery/Rang-Mahal-Restaurant.jpg" alt="" />
