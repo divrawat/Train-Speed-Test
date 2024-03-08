@@ -222,6 +222,88 @@ export default function Home() {
   const description = "Welcome to our Train Speed Test Tool, where you can have a bit of fun exploring how fast different trains zip around! 🚂💨 Whether you&apos;re a big train fan or just curious, our website lets you peek into the speedy world of trains in a super easy way."
 
 
+
+  var currentDate = new Date();
+  var formattedDate = currentDate.toISOString().slice(0,10);
+
+  const schema =
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://trainspeedtest.in.net/"
+    },
+    "headline": "Train Speed Test: Feel The Need For Speed",
+    "description": "Welcome to our Train Speed Test Tool, where you can have a bit of fun exploring how fast different trains zip around! 🚂💨 Whether you&apos;re a big train fan or just curious, our website lets you peek into the speedy world of trains in a super easy way.",
+    "image": "https://trainspeedtest.in.net/train.jpg",
+    "author": {
+      "@type": "Person",
+      "name": "Divyanshu Rawat",
+      "url": "https://www.linkedin.com/in/divyanshu-rawat-380911210/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Divyanshu Rawat",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://trainspeedtest.in.net/train.jpg"
+      }
+    },
+    "datePublished": "2024-02-02",
+    "dateModified": formattedDate
+  }
+
+
+
+  const Faqschema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How can I check my train speed ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "You can check train speed through trainspeedtest.in.net."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a train speed test accurate ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, train speed test is not accurate as it fully depends on GPS signal and your internet connectivity."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is it legal to do a train speed test ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes you can check your train speed, it is completely safe."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the average speed of a train in India ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The average speed of train in India is just 55 km/s ."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do this train speed tool work ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "This train speed tool access your location from the browser using the Geolocation API and updates when position changes. It watches the user's position and updates the provided callback whenever the position changes and hence the speed is predicted."
+        }
+      }
+    ]
+  };
+
+
   const head = () => (
     <Head>
       <title>Train Speed Test: Best Speedometer Online</title>
@@ -235,7 +317,8 @@ export default function Home() {
       <meta property="og:description" content={description} />
       <meta property="og:url" content={DOMAIN} />
       <meta property="og:site_name" content={DOMAIN} />
-      {/* <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} /> */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(Faqschema) }} />
     </Head>
   );
 

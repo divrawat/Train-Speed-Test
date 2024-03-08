@@ -31,6 +31,7 @@ export default function Navbar() {
 
                 <div className="md:pb-0 pr-3 md:mt-0 mt-4 md:bg-transparent ">
                     <ul id="menu" ref={menuRef} className="md:flex md:space-x-10 md:pb-0 pb-4 items-center font-bold  text-center leading-[3] hidden">
+                        <li> <Link href="/blog">Blog</Link></li>
                         <li> <Link href="/about">About</Link></li>
                         <li> <Link href="/contact">Contact</Link></li>
                         <li> <Link href="/disclaimer">Disclaimer</Link></li>
