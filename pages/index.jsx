@@ -335,6 +335,8 @@ export default function Home() {
 
               <h1 className="text-3xl font-bold text-center mt-5 bg-[black] text-white p-5">Train Speed Test - Feel the Need for Speed</h1>
 
+              <a  href="https://eded92vt6y4wvmdc2r-cl75399.hop.clickbank.net"><img className="mx-auto w-[500px] mt-5" src="/housecare.png" alt="" /></a> 
+
               <div className='flex justify-center mt-[100px] h-[220px] '>
                 <ReactSpeedometer value={speed} needleColor="red" startColor="#09cb09" endColor="#ff1919" segments={10} maxSegmentLabels={10}
                   minValue={0} maxValue={500} width={350} height={350} />
@@ -347,6 +349,8 @@ export default function Home() {
                   {isGeolocationActive ? (<><AiFillStop className="mr-2" color="#ff3838" />STOP</>) : (<><FaStopwatch className="mr-2" color="#84fb66" />START</>)}
                 </button>
               </div>
+
+              <a  href="https://eded92vt6y4wvmdc2r-cl75399.hop.clickbank.net"><img className="mx-auto w-[500px] mt-5" src="/housecare.png" alt="" /></a> 
 
 
 
