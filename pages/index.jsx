@@ -335,8 +335,6 @@ export default function Home() {
 
               <h1 className="text-3xl font-bold text-center mt-5 bg-[black] text-white p-5">Train Speed Test - Feel the Need for Speed</h1>
 
-              <a  href="https://eded92vt6y4wvmdc2r-cl75399.hop.clickbank.net"><img className="mx-auto w-[500px] mt-5" src="/housecare.png" alt="" /></a> 
-
               <div className='flex justify-center mt-[100px] h-[220px] '>
                 <ReactSpeedometer value={speed} needleColor="red" startColor="#09cb09" endColor="#ff1919" segments={10} maxSegmentLabels={10}
                   minValue={0} maxValue={500} width={350} height={350} />
@@ -350,7 +348,7 @@ export default function Home() {
                 </button>
               </div>
 
-              <a  href="https://eded92vt6y4wvmdc2r-cl75399.hop.clickbank.net"><img className="mx-auto w-[500px] mt-5" src="/housecare.png" alt="" /></a> 
+              <a  href="https://9cf8c4rm43510w886aldo2u12p.hop.clickbank.net"><img className="mx-auto w-[500px] mt-5" src="/thumbnail.jpeg" alt="" /></a> 
 
 
 
